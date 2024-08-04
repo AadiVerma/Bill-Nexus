@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
+// @ts-ignore
 import image from '/BN.png';
 import './index.css'
 import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom'
@@ -12,6 +13,7 @@ import { FloatingNav } from "./components/ui/floating-navbar";
 import { IoHomeSharp } from "react-icons/io5";
 import AddTransaction from './AddTransaction.tsx';
 import Layout from './components/layout.tsx'
+import Invoice from './components/Invoice.tsx';
 const navItems = [
   {
     name: "Home",
@@ -67,6 +69,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path="/about" element={<App />} />
         <Route path="/addtransaction" element={<AddTransaction />} />
         </Route>
+        <Route path="/Invoice" element={<Invoice />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

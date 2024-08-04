@@ -51,15 +51,13 @@ const navigate=useNavigate();
        </div>
         <div>
           <div className="mt-2 mb-2 ">
-            <OrderCard email={""} name={"Customer"} status={"Status"} date={"Date"} money={"Amount"} Type={"Category"} topbar={true}/>
+            <OrderCard email={""} name={"Customer"}  date={"Date of Transaction"} money={"Amount"} Type={"Mode of transaction"} />
           </div>
-          <OrderCard email={"aditya@gmail.com"} name={"Aditya Verma"} status={"Completed"} date={"2024-08-1"} money={"$250.00"} Type={"Food"}   topbar={false}/>
-          <OrderCard email={"aditya@gmail.com"} name={"Aditya Verma"} status={"Pending"} date={"2024-08-1"} money={"$250.00"} Type={"Bonus"}   topbar={false}/>
-          <OrderCard email={"aditya@gmail.com"} name={"Aditya Verma"} status={"Failed"} date={"2024-08-1"} money={"$250.00"} Type={"Finance"}   topbar={false}/>
-          <OrderCard email={"aditya@gmail.com"} name={"Aditya Verma"} status={"Completed"} date={"2024-08-1"} money={"$250.00"} Type={"Clothes"}  topbar={false} />
-          <OrderCard email={"aditya@gmail.com"} name={"Aditya Verma"} status={"Completed"} date={"2024-08-1"} money={"$250.00"} Type={"Salary"}   topbar={false}/>
-          <OrderCard email={"aditya@gmail.com"} name={"Aditya Verma"} status={"Pending"} date={"2024-08-1"} money={"$250.00"} Type={"Drinks"}  topbar={false} />
-          <OrderCard email={"aditya@gmail.com"} name={"Aditya Verma"} status={"Failed"} date={"2024-08-1"} money={"$250.00"} Type={"Shoes"}   topbar={false}/>
+          <OrderCard email={"aditya@gmail.com"} name={"Aditya Verma"} date={"2024-08-1"} money={"$250.00"} Type={"UPI"} />
+          <OrderCard email={"aditya@gmail.com"} name={"Aditya Verma"}  date={"2024-08-1"} money={"$250.00"} Type={"Cash"} />
+          <OrderCard email={"aditya@gmail.com"} name={"Aditya Verma"}  date={"2024-08-1"} money={"$250.00"} Type={"Phone Pay"}   />
+          <OrderCard email={"aditya@gmail.com"} name={"Aditya Verma"}  date={"2024-08-1"} money={"$250.00"} Type={"Paytm"} />
+          <OrderCard email={"aditya@gmail.com"} name={"Aditya Verma"}  date={"2024-08-1"} money={"$250.00"} Type={"Google Pay"}  />
         </div>
       </div>
 
