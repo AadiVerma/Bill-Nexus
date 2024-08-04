@@ -69,7 +69,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path="/about" element={<App />} />
         <Route path="/addtransaction" element={<AddTransaction />} />
         </Route>
-        <Route path="/Invoice" element={<Invoice />} />
+        <Route path="/invoice" element={<Invoice />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
