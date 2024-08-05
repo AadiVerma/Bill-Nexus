@@ -46,8 +46,8 @@ const Nav = () => {
       <div className='w-[40%]'>
        <SearchButton />
        </div>
-      <div className="flex gap-3 w-fit justify-end mr-10" onClick={()=>{navigate("/invoice")}}>
-        <IoNotifications className="bg-[#E21D48] hover:bg-[#d11941] text-5xl mt-1 h cursor-pointer border-2 border-[#212121] rounded-full p-2 " />
+      <div className="flex gap-3 w-fit justify-end mr-10" >
+        <IoNotifications onClick={()=>{navigate("/invoice")}} className="bg-[#E21D48] hover:bg-[#d11941] text-5xl mt-1 h cursor-pointer border-2 border-[#212121] rounded-full p-2 " />
         <div className="flex-col justify-center place-content-center">
           <ActionTab />
         </div>
