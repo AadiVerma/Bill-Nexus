@@ -1,10 +1,9 @@
 import SignUpImage from "/SignUpImage.jpg";
 import Logo from '/BN.png';
 import { FaArrowRightLong } from "react-icons/fa6";
-import {useNavigate} from 'react-router-dom';
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa6";
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import './SignUp.css';  
 export default function SignUp() {
     const navigate=useNavigate();
