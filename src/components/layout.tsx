@@ -46,7 +46,7 @@ const Layout = () => {
             <div className="flex-col justify-center place-content-center">
               <ActionTab />
             </div>
-            <div className="h-full w-fit p-2 bg-black flex-col justify-center place-content-center border-2 rounded-full border-[#121212] " onClick={()=>{
+            <div className="h-full w-fit p-2 bg-black flex-col cursor-pointer justify-center place-content-center border-2 rounded-full border-[#121212] " onClick={()=>{
       navigate("/SignUp")
             }}><AvatarNav /></div>
           </div>
