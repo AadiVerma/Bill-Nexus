@@ -43,10 +43,10 @@ const navigate=useNavigate();
           <button className="pt-2 pb-2 pl-4 pr-4 text-[#969696] font-bold hover:bg-black rounded-xl cursor-pointer focus:bg-black">Month</button>
           <button className="pt-2 pb-2 pl-4 pr-4 text-[#969696] font-bold hover:bg-black rounded-xl cursor-pointer focus:bg-black ">Year</button>
         </div>
-        <div className="pl-6 pr-6 pt-1 pb-1 rounded-xl  flex-col  place-content-center bg-[#E11D48] cursor-pointer hover:bg-[#b91536]">
-          <button className="text-white font-bold " onClick={()=>{
+        <div className="pl-6 pr-6 pt-1 pb-1 rounded-xl  flex-col  place-content-center bg-[#E11D48] cursor-pointer hover:bg-[#b91536]" onClick={()=>{
             navigate("/addtransaction")
-          }}>Add</button>
+          }}>
+          <button className="text-white font-bold " >Add</button>
         </div>
        </div>
         <div>

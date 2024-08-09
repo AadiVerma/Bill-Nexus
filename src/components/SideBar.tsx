@@ -5,14 +5,20 @@ import { LiaFileInvoiceSolid } from "react-icons/lia";
 import { FaMoneyBillTransfer } from "react-icons/fa6";
 import { LuBadgeHelp } from "react-icons/lu";
 import { RiLogoutBoxLine } from "react-icons/ri";
+import { useNavigate } from "react-router-dom";
 export default function SideBar(){
+    const navigate = useNavigate();
     return (
         <div className="flex min-h-screen fixed flex-wrap bg-[#121212] mb-2 ">
             <div className="h-fit w-fit bg-[#121212] border-2 border-[#212121] rounded-full ml-4 p-2">
             <div className="bg-black text-white rounded-full flex-col justify-between place-content-center p-8">
-            <BiSolidDashboard className="text-2xl hover:text-[#E11D48] cursor-pointer mt-4"/>
+            <BiSolidDashboard className="text-2xl hover:text-[#E11D48] cursor-pointer mt-4" onClick={()=>{
+                navigate("/")
+            }}/>
             <IoPerson className="mt-8 text-2xl hover:text-[#E11D48] cursor-pointer"/>
-            <LiaFileInvoiceSolid className="mt-8 text-2xl hover:text-[#E11D48] cursor-pointer"/>
+            <LiaFileInvoiceSolid className="mt-8 text-2xl hover:text-[#E11D48] cursor-pointer" onClick={()=>{
+                navigate("/Allinvoices")
+            }}/>
             <FaMoneyBillTransfer className="mt-8 text-2xl hover:text-[#E11D48] cursor-pointer" />
             <IoSettings className="mt-8 text-2xl hover:text-[#E11D48] cursor-pointer"/>
             <LuBadgeHelp  className="mt-8 text-2xl hover:text-[#E11D48] cursor-pointer"/>

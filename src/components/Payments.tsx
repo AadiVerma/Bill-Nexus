@@ -1,4 +1,5 @@
 import { AnimatedTooltip } from "./ui/animated-tooltip";
+import { useNavigate } from "react-router-dom";
 const people = [
   {
     id: 1,
@@ -30,9 +31,12 @@ const people = [
   },
 ];
 
-export function Payment() {
+export function Payment({datasend,customerName,customerinfo,customerAddres,Total}:{datasend:{ ItemName: string, Quantity: number, UnitPrice: number, id: number }[],customerName:string,customerAddres:string,customerinfo:string,Total:number}) {
+  const navigate=useNavigate();
   return (
-    <div className="flex flex-row items-center justify-center mb-10 w-full">
+    <div className="flex flex-row items-center justify-center mb-10 w-full" onClick={()=>{
+      navigate("/Invoice",{state:{datasend,customerName,customerinfo,customerAddres,Total}});
+    }}>
       <AnimatedTooltip items={people} />
     </div>
   );

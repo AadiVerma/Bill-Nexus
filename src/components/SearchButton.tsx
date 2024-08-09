@@ -1,10 +1,14 @@
 "use client";
 
+import { useState } from "react";
 import { PlaceholdersAndVanishInput } from "../components/ui/placeholders-and-vanish-input";
+import { useNavigate } from "react-router-dom";
 
 export function SearchButton() {
+  const [input,setInput]=useState<string>();
+  const navigate=useNavigate();
   const placeholders = [
-    "Search About Invoices",
+    "Search About AllInvoices",
     "Search About Customers",
     "Search About Services",
     "Search About Payments",
@@ -13,11 +17,11 @@ export function SearchButton() {
   ];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    console.log(e.target.value);
+    setInput(()=>e.target.value);
   };
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("submitted");
+    navigate(`${input}`)
   };
   return (
      <div className="border-2 border-[#212121] rounded-full p-1">

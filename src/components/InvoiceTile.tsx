@@ -1,5 +1,5 @@
 export default function InvoiceTile({Items,Quantity,UnitPrice,Total}:{
-    Items:string,Quantity:string,UnitPrice:string,Total:string
+    Items:string,Quantity:number | string,UnitPrice:number | string,Total:number | string
 }){
     return (
         <div className="flex justify-between border-b-2 border-black p-3">
