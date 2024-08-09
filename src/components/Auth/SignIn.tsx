@@ -3,9 +3,10 @@ import Logo from '/BN.png';
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa6";
-import { Link } from 'react-router-dom';
+import { Link ,useNavigate } from 'react-router-dom';
 import './SignUp.css'; 
 export default function SignIn() {
+    const navigate=useNavigate();
     return (
         <div className="h-screen flex justify-center items-center bg-black">
             <div className="flex w-full  h-[80vh] bg-black rounded-lg overflow-hidden shadow-lg p-6">
@@ -23,7 +24,7 @@ export default function SignIn() {
                             <h2 className="font-newfont font-bold mb-2">Password</h2>
                             <input type="password" placeholder="*******" className="font-newfont p-3 rounded-lg bg-[#27272a] border-2 border-gray-500 w-full hover:border-[#E21D48] mb-6" />
                         </div>
-                        <div>
+                        <div onClick={()=>{navigate("/")}}>
                             <button className="font-newfont font-extrabold text-lg p-3 rounded-lg bg-[#1e1e1f] border-2 border-gray-500 w-full hover:border-[#E21D48] flex gap-4 justify-center mb-4">
                                 Sign In <FaArrowRightLong className="mt-1 text-sm" />
                             </button>
